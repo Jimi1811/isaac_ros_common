@@ -151,7 +151,7 @@ DOCKER_ARGS+=("-e DISPLAY")
 DOCKER_ARGS+=("-e NVIDIA_VISIBLE_DEVICES=all")
 DOCKER_ARGS+=("-e NVIDIA_DRIVER_CAPABILITIES=all")
 DOCKER_ARGS+=("-e FASTRTPS_DEFAULT_PROFILES_FILE=/usr/local/share/middleware_profiles/rtps_udp_profile.xml")
-DOCKER_ARGS+=("-e ROS_DOMAIN_ID")
+DOCKER_ARGS+=("-e ROS_DOMAIN_ID=11")
 DOCKER_ARGS+=("-e USER")
 
 if [[ $PLATFORM == "aarch64" ]]; then
